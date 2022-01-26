@@ -7,3 +7,28 @@
     @apply bg-[#141414] text-gray-300;
   }
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 0.4rem;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #141414;
+
+    /* box-shadow: inset 0 0 10px 10px green; */
+    border: solid 3px #141414;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px #c4c8ce;
+    border-left: solid 30px #141414;
+    border-right: solid 30px #141414;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0 0 10px 10px #e50815;
+  }
+}

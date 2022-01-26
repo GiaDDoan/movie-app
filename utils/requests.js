@@ -18,7 +18,7 @@ const requests = {
     url: `/discover/movie?api_key=${API_KEY}&&with_genres=35`,
   },
   fetchRomanceMovies: {
-    title: "Comedy",
+    title: "Romance",
     url: `/discover/movie?api_key=${API_KEY}&&with_genres=10749`,
   },
   fetchMysteryMovies: {

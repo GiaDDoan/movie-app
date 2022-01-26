@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import HeaderItem from "./HeaderItem";
 import {
   HomeIcon,
@@ -10,11 +11,14 @@ import {
 } from "@heroicons/react/solid";
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
       <Image
-        className="object-contain"
+        className="object-contain hover:cursor-pointer"
         src="/images/notflix.png"
+        onClick={() => router.push("/")}
         width={200}
         height={100}
         alt="logo"
